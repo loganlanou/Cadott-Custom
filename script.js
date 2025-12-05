@@ -74,9 +74,36 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Add animation to cards and elements
-document.querySelectorAll('.service-card, .contact-item, .intro-card, .value-card').forEach(el => {
+document.querySelectorAll('.service-card, .contact-item, .intro-card, .value-card, .gallery-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(el);
 });
+
+// Gallery Filter (only on our-work page)
+const filterBtns = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+if (filterBtns.length > 0) {
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active button
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Filter gallery items
+            const filter = btn.dataset.filter;
+
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.dataset.category === filter) {
+                    item.classList.remove('hidden');
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
+    });
+}

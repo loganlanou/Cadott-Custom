@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio of custom kitchens, cabinetry, and woodworking projects at Cadott Custom in Cadott, Wisconsin.">
+    <title>Our Work | Cadott Custom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Cadott Custom</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="our-work.html" class="active">Our Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Work</h1>
+                <p>Browse our portfolio of custom projects</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+                    <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
+                    <button class="filter-btn" data-filter="woodwork">Woodwork</button>
+                    <button class="filter-btn" data-filter="closet">Closets</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Kitchen Projects -->
+                    <div class="gallery-item" data-category="kitchen">
+                        <div class="gallery-image">
+                            <img src="images/kitchen-1.jpg" alt="Custom kitchen with oak cabinetry" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Custom Oak Kitchen</h3>
+                                <p>Full kitchen renovation with custom oak cabinets</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="kitchen">
+                        <div class="gallery-image">
+                            <img src="images/kitchen-2.jpg" alt="Modern white kitchen cabinets" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Modern White Kitchen</h3>
+                                <p>Clean, modern design with white shaker cabinets</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="kitchen">
+                        <div class="gallery-image">
+                            <img src="images/kitchen-3.jpg" alt="Rustic farmhouse kitchen" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Farmhouse Kitchen</h3>
+                                <p>Rustic farmhouse style with custom island</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bathroom Projects -->
+                    <div class="gallery-item" data-category="bathroom">
+                        <div class="gallery-image">
+                            <img src="images/bathroom-1.jpg" alt="Custom bathroom vanity" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Double Vanity</h3>
+                                <p>Custom double vanity with granite countertop</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bathroom">
+                        <div class="gallery-image">
+                            <img src="images/bathroom-2.jpg" alt="Master bathroom cabinetry" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Master Bath Renovation</h3>
+                                <p>Complete master bathroom cabinetry</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Woodwork Projects -->
+                    <div class="gallery-item" data-category="woodwork">
+                        <div class="gallery-image">
+                            <img src="images/woodwork-1.jpg" alt="Built-in entertainment center" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Entertainment Center</h3>
+                                <p>Custom built-in entertainment center</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="woodwork">
+                        <div class="gallery-image">
+                            <img src="images/woodwork-2.jpg" alt="Custom bookshelf" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Built-in Bookshelf</h3>
+                                <p>Floor-to-ceiling custom bookshelf</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="woodwork">
+                        <div class="gallery-image">
+                            <img src="images/woodwork-3.jpg" alt="Custom dining table" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Dining Table</h3>
+                                <p>Handcrafted solid wood dining table</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Closet Projects -->
+                    <div class="gallery-item" data-category="closet">
+                        <div class="gallery-image">
+                            <img src="images/closet-1.jpg" alt="Walk-in closet system" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Walk-in Closet</h3>
+                                <p>Custom walk-in closet organization system</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="closet">
+                        <div class="gallery-image">
+                            <img src="images/closet-2.jpg" alt="Reach-in closet organizer" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="gallery-overlay">
+                                <h3>Reach-in Closet</h3>
+                                <p>Space-maximizing reach-in closet design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Contact us today to discuss your custom cabinetry or woodworking needs.</p>
+                    <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Cadott Custom</h3>
+                    <p>Quality custom cabinetry and woodworking in Cadott, Wisconsin.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="our-work.html">Our Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cadott Custom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
