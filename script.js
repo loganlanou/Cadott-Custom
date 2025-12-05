@@ -207,3 +207,43 @@ const setVH = () => {
 
 setVH();
 window.addEventListener('resize', setVH);
+
+// ===== HERO SLIDESHOW =====
+const heroSlideshow = document.querySelector('.hero-slideshow');
+
+if (heroSlideshow) {
+    const slides = heroSlideshow.querySelectorAll('.slide');
+    let currentSlide = 0;
+    const slideInterval = 5000; // 5 seconds per slide
+
+    // Only run slideshow if there are multiple slides
+    if (slides.length > 1) {
+        const nextSlide = () => {
+            // Remove active class from current slide
+            slides[currentSlide].classList.remove('active');
+
+            // Move to next slide (loop back to first)
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            // Add active class to new slide
+            slides[currentSlide].classList.add('active');
+        };
+
+        // Start the slideshow
+        let slideshowTimer = setInterval(nextSlide, slideInterval);
+
+        // Pause slideshow when page is not visible (saves resources)
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                clearInterval(slideshowTimer);
+            } else {
+                slideshowTimer = setInterval(nextSlide, slideInterval);
+            }
+        });
+
+        // Respect reduced motion preference
+        if (prefersReducedMotion) {
+            clearInterval(slideshowTimer);
+        }
+    }
+}
