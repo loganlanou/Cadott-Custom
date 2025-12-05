@@ -506,16 +506,6 @@ section {
     color: var(--color-primary);
 }
 
-.facebook-icon {
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.facebook-icon:hover {
-    background-color: var(--color-primary-dark);
-    transform: scale(1.1);
-}
-
 /* Contact Form */
 .contact-form {
     background-color: var(--color-white);
