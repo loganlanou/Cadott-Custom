@@ -127,25 +127,20 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 20px;
+    padding: 12px 20px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-primary);
 }
 
 .logo:hover {
-    color: var(--color-primary-dark);
+    opacity: 0.9;
 }
 
 .logo-img {
-    height: 55px;
+    height: 85px;
     width: auto;
 }
 
@@ -214,7 +209,7 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 110px;
     overflow: hidden;
 }
 
@@ -278,7 +273,7 @@ img {
 /* Page Hero (Inner Pages) */
 .page-hero {
     background: linear-gradient(135deg, rgba(139, 69, 19, 0.9), rgba(107, 52, 16, 0.95));
-    padding: 140px 0 60px;
+    padding: 160px 0 60px;
     text-align: center;
 }
 
@@ -881,13 +876,8 @@ section {
         padding: 12px 16px;
     }
 
-    .logo {
-        font-size: 1.25rem;
-        gap: 8px;
-    }
-
     .logo-img {
-        height: 45px;
+        height: 65px;
     }
 
     /* Hamburger menu - 44x44px touch target */
@@ -960,7 +950,7 @@ section {
     .hero {
         min-height: 100vh;
         min-height: calc(var(--vh, 1vh) * 100);
-        padding: 80px 0 60px;
+        padding: 100px 0 60px;
     }
 
     .hero-slideshow .slide {
@@ -984,7 +974,7 @@ section {
 
     /* Page hero for inner pages */
     .page-hero {
-        padding: 100px 0 40px;
+        padding: 110px 0 40px;
     }
 
     .page-hero h1 {
