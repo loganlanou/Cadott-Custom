@@ -131,6 +131,9 @@ img {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
@@ -139,6 +142,11 @@ img {
 
 .logo:hover {
     color: var(--color-primary-dark);
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .nav-menu {
@@ -470,6 +478,13 @@ section {
     align-items: center;
 }
 
+.about-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: var(--radius-lg);
+}
+
 .image-placeholder {
     width: 100%;
     max-width: 400px;
@@ -506,6 +521,16 @@ section {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.contact-logo {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.contact-logo img {
+    max-width: 180px;
+    height: auto;
 }
 
 .contact-item {
@@ -586,6 +611,32 @@ section {
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+.form-checkbox {
+    margin-bottom: 24px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    accent-color: var(--color-primary);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.checkbox-label span {
+    color: var(--color-text);
+    line-height: 1.5;
 }
 
 .contact-form .btn {

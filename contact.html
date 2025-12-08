@@ -13,7 +13,10 @@
 <body>
     <header class="header">
         <nav class="nav container">
-            <a href="index.html" class="logo">Cadott Custom</a>
+            <a href="index.html" class="logo">
+                <img src="generallogo.png" alt="Cadott Custom Logo" class="logo-img">
+                Cadott Custom
+            </a>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -41,6 +44,9 @@
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info">
+                        <div class="contact-logo">
+                            <img src="generallogo.png" alt="Cadott Custom Logo">
+                        </div>
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -120,6 +126,12 @@
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span>Subscribe to our newsletter and deals</span>
+                            </label>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
